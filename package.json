@@ -1,7 +1,7 @@
 {
-  "name": "default-theme-skeleton",
+  "name": "wp-theme-starter-kit",
   "version": "1.0.0",
-  "description": "Wordpress Basic Theme Setup",
+  "description": "Initial wp theme setup to speed up a development process",
   "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

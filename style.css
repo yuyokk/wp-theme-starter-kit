@@ -1,5 +1,5 @@
 /*
-Theme Name: Theme Name
+Theme Name: wp-theme-starter-kit
 Author:
 Author URI:
 Version: 1.0
@@ -21,6 +21,15 @@ Version: 1.0
 @viewport {
   width: device-width;
 }
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 32px;
+}
+
 .img-responsive {
   width: auto;
 }
@@ -29,6 +38,22 @@ Version: 1.0
 /* header */
 /* end header */
 /* content */
+.blog__pagination {
+  margin-top: 25px;
+  text-align: center;
+}
+
 /* end content */
 /* footer */
+.footer-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #f8f8f8;
+  border: 1px solid #e7e7e7;
+}
+
 /* end footer */

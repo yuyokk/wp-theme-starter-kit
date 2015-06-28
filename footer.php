@@ -1,3 +1,11 @@
+    </div><!-- .container -->
+
+    <div class="footer-container">
+      <div class="container text-center">
+        &copy; All rights reserved <?php echo date('Y'); ?> <a href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
+      </div>
+    </div><!-- .footer-container -->
+
     <script>
       <?php /* windows phone ie bootstrap fix */ ?>
       if (navigator.userAgent.match(/IEMobile\/10\.0/)) {

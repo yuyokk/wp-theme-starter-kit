@@ -21,6 +21,8 @@ function register_menus() {
 
 add_filter('wp_mail_from', 'cdx_from_email');
 function cdx_from_email() {
+  // Make sure the email is from the same domain
+  // as your website to avoid being marked as spam
   return "do-not-reply@example.com";
 }
 

@@ -11,9 +11,6 @@ function add_custom_styles() {
   wp_enqueue_script('bootstrap-js');
 }
 
-remove_filter('the_content', 'wpautop');
-remove_filter('the_excerpt', 'wpautop');
-
 add_action('init', 'register_menus');
 function register_menus() {
   register_nav_menus( array(
@@ -30,4 +27,15 @@ function cdx_from_email() {
 add_filter('excerpt_more', 'new_excerpt_more');
 function new_excerpt_more($more) {
   return ' <a class="read-more" href="' . get_permalink(get_the_ID()) . '">Read More</a>';
+}
+
+// remove wpautop for 'page' post type only
+remove_filter('the_content', 'wpautop');
+add_filter('the_content', 'custom_formatting');
+function custom_formatting($content) {
+  if (get_post_type() == 'page') {
+    return $content; // no autop
+  }
+
+  return wpautop($content);
 }

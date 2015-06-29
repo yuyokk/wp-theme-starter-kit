@@ -4,15 +4,11 @@ require_once('lib/wp_bootstrap_navwalker.php');
 
 add_action( 'wp_enqueue_scripts', 'add_custom_styles' );
 function add_custom_styles() {
-  wp_enqueue_style('font-awesome-css', get_template_directory_uri() . '/vendor/css/font-awesome.min.css');
-  wp_enqueue_style('bootstrap-css', get_template_directory_uri() . '/vendor/css/bootstrap.min.css');
+  wp_enqueue_style('bootstrap-css', get_template_directory_uri() . '/assets/vendor/bootstrap/dist/css/bootstrap.css');
   wp_enqueue_style('style-css', get_stylesheet_uri());
 
-  wp_enqueue_script(
-    'bootstrap-js',
-    get_template_directory_uri() . '/vendor/js/bootstrap.min.js',
-    array( 'jquery' )
-  );
+  wp_register_script('bootstrap-js', get_template_directory_uri() . '/assets/vendor/bootstrap/dist/js/bootstrap.js', array('jquery'));
+  wp_enqueue_script('bootstrap-js');
 }
 
 remove_filter('the_content', 'wpautop');

@@ -1,0 +1,73 @@
+/*
+Theme Name: wp-theme-starter-kit
+Theme URI: https://github.com/yuyokk/wp-theme-starter-kit
+Author: Iurii Kucherov <yuyokk@gmail.com>
+Author URI: http://iurii.ninja/
+Description: Initial wp theme setup to speed up a development process
+Version: 1.0
+*/
+
+/* common */
+/* windows phone ie bootstrap fix */
+@-webkit-viewport { width: device-width; }
+@-moz-viewport    { width: device-width; }
+@-ms-viewport     { width: device-width; }
+@-o-viewport      { width: device-width; }
+@viewport         { width: device-width; }
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 32px; // footer's height
+}
+
+.img-responsive {
+  width: auto;
+}
+/* end common */
+
+
+/* header */
+/* end header */
+
+
+/* content */
+.blog__pagination {
+  margin-top: 25px;
+  text-align: center;
+}
+/* end content */
+
+
+/* footer */
+.footer-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  background-color: #f8f8f8;
+  border: 1px solid #e7e7e7;
+}
+/* end footer */
+
+
+@media (max-width: 767px) {
+
+}
+@media (min-width: 768px) {
+
+}
+@media (min-width: 992px) {
+
+}
+@media (min-width: 1200px) {
+
+}

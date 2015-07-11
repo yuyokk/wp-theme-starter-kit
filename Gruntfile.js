@@ -13,6 +13,19 @@ module.exports = function(grunt) {
       }
     },
 
+    pot: {
+      options: {
+        text_domain: 'wp-theme-starter-kit',
+        dest: 'src/languages/',
+        keywords: ['__', '_e'],
+        omit_header: true
+      },
+      files: {
+        src:  ['src/**/*.php'],
+        expand: true
+      }
+    },
+
     watch: {
       css: {
         files: 'src/assets/scss/styles.scss',
@@ -21,8 +34,9 @@ module.exports = function(grunt) {
     }
   });
 
+  grunt.loadNpmTasks('grunt-pot');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('default', ['sass', 'watch']);
+  grunt.registerTask('default', ['pot', 'sass', 'watch']);
 };

@@ -37,8 +37,8 @@ get_header(); ?>
         'format'    => '?page=%#%',
         'current'   => max(1, $paged),
         'total'     => $the_query->max_num_pages,
-        'prev_text' => __('&lt;'),
-        'next_text' => __('&gt;'),
+        'prev_text' => '&lt;',
+        'next_text' => '&gt;'
       ));
     ?>
   </div><!-- .blog__pagination -->
@@ -46,7 +46,7 @@ get_header(); ?>
   <?php wp_reset_postdata(); ?>
 <?php else : ?>
   <h1 class="text-center text-danger">
-    <?php _e('Sorry, no posts found.'); ?>
+    <?php _e('Sorry, no posts found.', 'wp-theme-starter-kit'); ?>
   </h1>
 <?php endif; ?>
 

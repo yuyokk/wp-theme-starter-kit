@@ -1,0 +1,27 @@
+#: src/404.php:4
+msgid "404 Not Found"
+msgstr ""
+
+#: src/footer.php:5
+msgid "All rights reserved"
+msgstr ""
+
+#: src/functions.php:17
+msgid "Header Menu"
+msgstr ""
+
+#: src/functions.php:18
+msgid "Footer Menu"
+msgstr ""
+
+#: src/functions.php:31
+msgid "Read More"
+msgstr ""
+
+#: src/header.php:24
+msgid "Toggle navigation"
+msgstr ""
+
+#: src/page-templates/tpl-blog.php:49
+msgid "Sorry, no posts found."
+msgstr ""

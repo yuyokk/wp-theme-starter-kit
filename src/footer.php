@@ -2,7 +2,9 @@
 
     <div class="footer-container">
       <div class="container text-center">
-        &copy; All rights reserved <?php echo date('Y'); ?> <a href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
+        &copy; <?php _e('All rights reserved', 'wp-theme-starter-kit'); ?>
+        <?php echo date('Y'); ?>
+        <a href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
       </div>
     </div><!-- .footer-container -->
 

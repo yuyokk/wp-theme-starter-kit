@@ -18,7 +18,11 @@ msgstr ""
 msgid "Read More"
 msgstr ""
 
-#: src/header.php:24
+#: src/functions.php:53
+msgid "Home"
+msgstr ""
+
+#: src/header.php:25
 msgid "Toggle navigation"
 msgstr ""
 

@@ -46,3 +46,12 @@ add_action('after_setup_theme', 'theme_setup');
 function theme_setup(){
   load_theme_textdomain('wp-theme-starter-kit', get_template_directory() . '/languages');
 }
+
+add_filter('wp_title', 'wp_title_for_home');
+function wp_title_for_home($title) {
+  if ( empty($title) && (is_home() || is_front_page()) ) {
+    return __('Home', 'wp-theme-starter-kit') . ' | ' . get_bloginfo('description');
+  }
+
+  return $title;
+}
